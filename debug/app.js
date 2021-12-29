@@ -1,6 +1,6 @@
-const extra = require('./extra');
+import { saludar } from './extra';
 
-extra.saludar();
+saludar();
 
 
 let curso = 'node';

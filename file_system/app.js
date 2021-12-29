@@ -1,4 +1,4 @@
-const fs = require('fs');
+import { readdirSync } from 'fs';
 
 console.log('iniciado')
 // fs.readFile('data.txt', 'utf-8', (error, data) => {
@@ -34,7 +34,7 @@ console.log('iniciado')
 //     })
 // });
 
-fs.readdirSync('./../../NODEJS-TUTOS/file_system').forEach(file =>{
+readdirSync('./../../NODEJS-TUTOS/file_system').forEach(file =>{
     console.log(file);
 });
 

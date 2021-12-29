@@ -1,5 +1,5 @@
-const request = require('request');
-const argv = require('yargs').argv;
+import request from 'request';
+import { argv } from 'yargs';
 
 let accion = argv.accion;
 let url = `https://swapi.dev/api/${accion}`;
@@ -21,5 +21,4 @@ request({
         console.log(JSON.stringify(body.residents[0]));
         console.log(JSON.stringify(body.films[2]));
     }
-
     });
